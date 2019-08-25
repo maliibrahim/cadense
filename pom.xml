@@ -41,7 +41,6 @@
     <module>com.sbm.cadence.persistence</module>
     <module>com.sbm.cadence.service</module>
     <module>com.sbm.cadence.presentation</module>
-    <module>com.sbm.cadence.be.integration</module>
   </modules>
   <profiles>
     <profile>
