@@ -1,0 +1,27 @@
+.pagin{
+    text-align: center;
+    ul{
+        display: inline-block;
+        margin-bottom: 0px;
+        li{
+            a{
+                width: 35px;
+                height: 35px;
+                display: block;
+                border-radius: 100%;
+                margin: 0px 5px;
+                transition: $v-fast;
+                border-color: $gray;
+                color: $dark;
+                line-height: 35px;
+                padding: 0px;
+            }
+            &.active{
+                a{
+                    background-color: $primary;
+                    color: $white
+                }
+            }
+        }
+    }
+}

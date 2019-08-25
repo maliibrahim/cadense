@@ -1,0 +1,76 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 12, 2019, 2:12:29 PM
+    Author     : Ahmed Farouk
+*/
+
+aside{
+    position: fixed;
+    left: 0px;
+    width: 200px;
+    height: calc(100vh - 60px);
+    background-color: $white;
+    .panel-group{
+        .panel{
+            margin: 0px;
+            border-bottom: $gray 1px solid;
+            .panel-heading{
+                padding: 0px;
+                a{
+                    padding: 20px 15px;
+                    font-weight: bold;
+                    display: block;
+                    color: $primary;
+                    font-size: 14px;
+                    box-shadow: rgba(0, 0, 0, 0.1) 0 10px 25px 0px;
+                    transition: $v-fast;
+                    i{
+                        float: left;
+                        margin-right: 10px;
+                        font-size: 18px;
+                    }
+                    &.collapsed{
+                        color: $dark;
+                        box-shadow: none;
+                    }
+                }
+            }
+            &:last-of-type{
+                border-bottom: none;
+            }
+            .panel-body{
+                ul{
+                    padding-left: 20px;
+                    li{
+                        a{
+                            display: block;
+                            color: $slategray;
+                            font-size: 13px;
+                            padding: 10px 0px;
+                            position: relative;
+                            transition: $v-fast;
+                            &:before{
+                                content: "";
+                                display: block;
+                                width: 6px;
+                                height: 6px;
+                                background-color: $slategray;
+                                border-radius: 100%;
+                                position: absolute;
+                                left: -15px;
+                                top: 12px;
+                            }
+                            &:hover{
+                                color: $primary;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

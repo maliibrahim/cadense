@@ -1,0 +1,26 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 13, 2019, 3:12:18 PM
+    Author     : Ahmed Farouk
+*/
+
+.group{
+    +.group{
+        margin-top: 20px;
+    }
+    .collapse-title{
+        padding: 10px;
+        font-size: 14px;
+        font-weight: bold;
+        background-color: $gray;
+        cursor: pointer;
+    }
+    .group-cont{
+        padding: 10px;
+        border: $gray 1px solid;
+    }
+}

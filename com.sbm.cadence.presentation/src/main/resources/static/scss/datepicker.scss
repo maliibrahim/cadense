@@ -1,0 +1,28 @@
+.datetimepicker{
+    border: none;
+    border-radius: 0px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 10px 25px 0px,rgba(0, 0, 0, 0.1) 0 0px 25px 0px ;
+    th,td{
+        border-radius: 0px;
+    }
+    td{
+        &.active{
+            background-color: $primary
+        }
+    }
+    .icon-arrow-right,.icon-arrow-left{
+        &::before{
+            font-family:LineAwesome;
+        }
+    }
+    .icon-arrow-right{
+        &::before{
+            content:"\f121"
+        }
+    }
+    .icon-arrow-left{
+        &::before{
+            content:"\f120"
+        }
+    }
+}

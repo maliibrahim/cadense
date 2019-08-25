@@ -1,0 +1,156 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 12, 2019, 4:03:59 PM
+    Author     : Ahmed Farouk
+*/
+
+#content{
+    padding: 30px;
+    position: relative;
+    .card-title{
+        border-bottom: $gray 1px solid;
+        h2{
+            padding: 20px;
+            font-size: 16px;
+            font-weight: bold;
+            color: $dark;
+        }
+    }
+    .card{
+        background-color: $white;
+        overflow: hidden;
+        margin-bottom: 30px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0 10px 25px 0px,rgba(0, 0, 0, 0.1) 0 0px 25px 0px ;
+        transition: $v-fast;
+        &:hover{
+            box-shadow: rgba(0, 0, 0, 0.1) 0 15px 35px 5px,rgba(0, 0, 0, 0.1) 0 5px 35px 5px ;
+
+        }
+        .chart{
+            margin-left: -10px;
+            margin-bottom: -10px;
+        }
+        .cont{
+            padding: 20px;
+            h2{
+                font-weight: bold;
+                color: $dark;
+                margin-bottom: 10px;
+                font-size: 16px;
+            }
+            p{
+                color: $slategray;
+                font-size: 13px;
+            }
+            .list{
+                margin-top: 20px;
+                li{
+                    a{
+                        display: block;
+                        padding: 10px 0px;
+                        border-bottom: $gray 1px solid;
+                        h3{
+                            color: $primary;
+                            font-size: 14px;
+                            font-weight: bold;
+                        }
+                        h4{
+                            color: $slategray;
+                            font-style: italic;
+                            font-size: 12px;
+                            margin-top: 5px;
+                        }
+                        p{
+                            margin-top: 10px;
+                            font-size: 13px;
+                            color: $slategray;
+                        }
+                    }
+                    &:last-of-type{
+                        a{
+                            padding-bottom: 0px;
+                            border-bottom: none;
+                        }
+                    }
+                    &:first-of-type{
+                        a{
+                            padding-top: 0px;
+                        }
+                    }
+                }
+            }
+        }
+        &.filter{
+            cursor: pointer;
+            position: relative;
+            .icon{
+                position: absolute;
+                font-size: 30px;
+                top: 10px;
+                right: 10px;
+                // color: rgba($color: $black, $alpha: .3);
+                opacity: .6;
+            }
+            .text-red{
+                color: $danger;
+            }
+            .text-green{
+                color: $success;
+            }
+            .text-yellow{
+                color: $warning;
+            }
+            .text-blue{
+                color: $info;
+            }
+
+            h3{
+                font-size: 22px;
+                font-weight: bold;
+                color: $slategray;
+                margin-top: 20px;
+            }
+        }
+        ~.dropdown-menu{
+            width: calc(100% - 30px);
+            left: 15px;
+            border-radius: 0px;
+            top: calc(100% - 30px);
+            margin-top: 0px;
+            border: none;
+            padding: 0px;
+            li{
+                padding: 15px;
+                font-weight: bold;
+                font-size: 16px;
+                color: $dark;
+                border-bottom: $gray 1px solid;
+                transition: $v-fast;
+                cursor: pointer;
+                &:hover{
+                    color: $primary;
+                    background-color: $light;
+                }
+            }
+        }    
+    }
+    .dropdown{
+        .dropdown-menu{
+            display: block;
+            transform: scaleY(0);
+            transform-origin: 50% 0px;
+            transition: $fast;
+            opacity: 0;
+        }
+        &.open{
+            .dropdown-menu{
+                transform: scaleY(1);
+                opacity: 1;
+            }
+        }
+    }
+}

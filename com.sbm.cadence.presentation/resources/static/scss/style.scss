@@ -1,0 +1,29 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 10, 2019, 4:02:00 PM
+    Author     : Ahmed Farouk
+*/
+
+@import "variables.scss";
+@import "main.scss";
+
+#body{
+    background-color: $light;
+    padding-top: 62px;
+    padding-left: 200px;
+    @import "header.scss";
+    @import "aside.scss";
+    @import "content.scss";
+    @import "tabs.scss";
+    @import "collapse.scss";
+    @import "tables.scss";
+    @import "forms.scss";
+    @import "comments.scss";
+    @import "datepicker.scss";
+    @import "pagin.scss";
+}
+

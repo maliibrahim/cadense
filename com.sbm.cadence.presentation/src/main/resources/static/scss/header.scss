@@ -1,0 +1,67 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 11, 2019, 5:16:49 PM
+    Author     : Ahmed Farouk
+*/
+
+header{
+    background-color: $primary;
+    padding: 10px 0px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 999;
+    .logo{
+        img{
+            height: 40px;
+        }
+    }
+    .search{
+        .search-input{
+            position: relative;
+            input{
+                width: 100%;
+                border: none;
+                background-color: transparent;
+                height: 40px;
+                line-height: 40px;
+                border-radius: 20px;
+                background-color: rgba($black, .2);
+                padding: 0px 20px 0px 40px;
+                color: $white;
+            }
+            button{
+                position: absolute;
+                width: 40px;
+                height: 40px;
+                background-color: transparent;
+                border: none;
+                color: $white;
+                top: 0px;
+            }
+        }
+    }
+    .otions{
+        float: right;
+        .lead{
+            height: 40px;
+            padding: 0px 20px;
+            color: $white;
+            border-radius: 20px;
+            background-color: $secondary;
+            color: $white;
+            line-height: 36px;
+            color: $white;
+            font-weight: bold;
+            i{
+                margin-right: 5px;
+                font-weight: bold;
+            }
+        }
+    }
+}

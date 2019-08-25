@@ -1,0 +1,39 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 13, 2019, 2:21:58 PM
+    Author     : Ahmed Farouk
+*/
+
+.external-tabs{
+    .nav-tabs{
+        border: none;
+        margin-bottom: 20px;
+        >li{
+            a{
+                height: 40px;
+                padding: 0px 20px;
+                margin-right: 15px;
+                line-height: 40px;
+                border-radius: 40px;
+                border: none;
+                background-color: $white;
+                box-shadow: rgba($color: $black, $alpha: .1) 0px 3px 10px 0px;
+                font-weight: bold;
+                color: $dark;
+                font-size: 14px;
+                transition: $v-fast;
+            }
+            &:hover,&.active{
+                a{
+                    color: $white;
+                    background-color: $primary;
+                    box-shadow: rgba($color: $black, $alpha: .1) 0px 3px 20px 5px;
+                }
+            }
+        }
+    }
+}

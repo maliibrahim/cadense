@@ -1,0 +1,739 @@
+@charset "UTF-8";
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 10, 2019, 4:02:00 PM
+    Author     : Ahmed Farouk
+*/
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 10, 2019, 8:21:48 AM
+    Author     : Ahmed Farouk
+*/
+/*======================
+	Colors
+======================*/
+/*======================
+	Transitions
+======================*/
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 10, 2019, 4:10:21 PM
+    Author     : Ahmed Farouk
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1;
+  font-family: 'Roboto Condensed', sans-serif; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+input:hover, input:focus, textarea:hover, textarea:focus, a:hover, a:focus, button:hover, button:focus {
+  outline: none;
+  text-decoration: none; }
+
+.text-red {
+  color: #F22435 !important; }
+
+#body {
+  background-color: #f4f7fb;
+  padding-top: 62px;
+  padding-left: 200px;
+  /*
+  To change this license header, choose License Headers in Project Properties.
+  To change this template file, choose Tools | Templates
+  and open the template in the editor.
+  */
+  /* 
+      Created on : Mar 11, 2019, 5:16:49 PM
+      Author     : Ahmed Farouk
+  */
+  /*
+  To change this license header, choose License Headers in Project Properties.
+  To change this template file, choose Tools | Templates
+  and open the template in the editor.
+  */
+  /* 
+      Created on : Mar 12, 2019, 2:12:29 PM
+      Author     : Ahmed Farouk
+  */
+  /*
+  To change this license header, choose License Headers in Project Properties.
+  To change this template file, choose Tools | Templates
+  and open the template in the editor.
+  */
+  /* 
+      Created on : Mar 12, 2019, 4:03:59 PM
+      Author     : Ahmed Farouk
+  */
+  /*
+  To change this license header, choose License Headers in Project Properties.
+  To change this template file, choose Tools | Templates
+  and open the template in the editor.
+  */
+  /* 
+      Created on : Mar 13, 2019, 2:21:58 PM
+      Author     : Ahmed Farouk
+  */
+  /*
+  To change this license header, choose License Headers in Project Properties.
+  To change this template file, choose Tools | Templates
+  and open the template in the editor.
+  */
+  /* 
+      Created on : Mar 13, 2019, 3:12:18 PM
+      Author     : Ahmed Farouk
+  */
+  /*
+  To change this license header, choose License Headers in Project Properties.
+  To change this template file, choose Tools | Templates
+  and open the template in the editor.
+  */
+  /* 
+      Created on : Mar 13, 2019, 3:33:26 PM
+      Author     : Ahmed Farouk
+  */ }
+  #body header {
+    background-color: #364fff;
+    padding: 10px 0px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 999; }
+    #body header .logo img {
+      height: 40px; }
+    #body header .search .search-input {
+      position: relative; }
+      #body header .search .search-input input {
+        width: 100%;
+        border: none;
+        background-color: transparent;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 20px;
+        background-color: rgba(0, 0, 0, 0.2);
+        padding: 0px 20px 0px 40px;
+        color: #FFFFFF; }
+      #body header .search .search-input button {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        background-color: transparent;
+        border: none;
+        color: #FFFFFF;
+        top: 0px; }
+    #body header .otions {
+      float: right; }
+      #body header .otions .lead {
+        height: 40px;
+        padding: 0px 20px;
+        color: #FFFFFF;
+        border-radius: 20px;
+        background-color: #F2248F;
+        color: #FFFFFF;
+        line-height: 36px;
+        color: #FFFFFF;
+        font-weight: bold; }
+        #body header .otions .lead i {
+          margin-right: 5px;
+          font-weight: bold; }
+  #body aside {
+    position: fixed;
+    left: 0px;
+    width: 200px;
+    height: calc(100vh - 60px);
+    background-color: #FFFFFF; }
+    #body aside .panel-group .panel {
+      margin: 0px;
+      border-bottom: #dae4f1 1px solid; }
+      #body aside .panel-group .panel .panel-heading {
+        padding: 0px; }
+        #body aside .panel-group .panel .panel-heading a {
+          padding: 20px 15px;
+          font-weight: bold;
+          display: block;
+          color: #364fff;
+          font-size: 14px;
+          -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 10px 25px 0px;
+                  box-shadow: rgba(0, 0, 0, 0.1) 0 10px 25px 0px;
+          -webkit-transition: 0.2s ease-in-out;
+          transition: 0.2s ease-in-out; }
+          #body aside .panel-group .panel .panel-heading a i {
+            float: left;
+            margin-right: 10px;
+            font-size: 18px; }
+          #body aside .panel-group .panel .panel-heading a.collapsed {
+            color: #152935;
+            -webkit-box-shadow: none;
+                    box-shadow: none; }
+      #body aside .panel-group .panel:last-of-type {
+        border-bottom: none; }
+      #body aside .panel-group .panel .panel-body ul {
+        padding-left: 20px; }
+        #body aside .panel-group .panel .panel-body ul li a {
+          display: block;
+          color: #708090;
+          font-size: 13px;
+          padding: 10px 0px;
+          position: relative;
+          -webkit-transition: 0.2s ease-in-out;
+          transition: 0.2s ease-in-out; }
+          #body aside .panel-group .panel .panel-body ul li a:before {
+            content: "";
+            display: block;
+            width: 6px;
+            height: 6px;
+            background-color: #708090;
+            border-radius: 100%;
+            position: absolute;
+            left: -15px;
+            top: 12px; }
+          #body aside .panel-group .panel .panel-body ul li a:hover {
+            color: #364fff; }
+  #body #content {
+    padding: 30px;
+    position: relative; }
+    #body #content .card-title {
+      border-bottom: #dae4f1 1px solid; }
+      #body #content .card-title h2 {
+        padding: 20px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #152935; }
+        #body #content .card-title h3 {
+        padding: 10px;
+        font-size: 14px;
+        color: #152935; }
+    #body #content .card {
+      background-color: #FFFFFF;
+      overflow: hidden;
+      margin-bottom: 30px;
+      -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 10px 25px 0px, rgba(0, 0, 0, 0.1) 0 0px 25px 0px;
+              box-shadow: rgba(0, 0, 0, 0.1) 0 10px 25px 0px, rgba(0, 0, 0, 0.1) 0 0px 25px 0px;
+      -webkit-transition: 0.2s ease-in-out;
+      transition: 0.2s ease-in-out; }
+      #body #content .card:hover {
+        -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 15px 35px 5px, rgba(0, 0, 0, 0.1) 0 5px 35px 5px;
+                box-shadow: rgba(0, 0, 0, 0.1) 0 15px 35px 5px, rgba(0, 0, 0, 0.1) 0 5px 35px 5px; }
+      #body #content .card .chart {
+        margin-left: -10px;
+        margin-bottom: -10px; }
+      #body #content .card .cont {
+        padding: 20px; }
+        #body #content .card .cont h2 {
+          font-weight: bold;
+          color: #152935;
+          margin-bottom: 10px;
+          font-size: 16px; }
+        #body #content .card .cont p {
+          color: #708090;
+          font-size: 13px; }
+        #body #content .card .cont .list {
+          margin-top: 20px; }
+          #body #content .card .cont .list li a {
+            display: block;
+            padding: 10px 0px;
+            border-bottom: #dae4f1 1px solid; }
+            #body #content .card .cont .list li a h3 {
+              color: #364fff;
+              font-size: 14px;
+              font-weight: bold; }
+            #body #content .card .cont .list li a h4 {
+              color: #708090;
+              font-style: italic;
+              font-size: 12px;
+              margin-top: 5px; }
+            #body #content .card .cont .list li a p {
+              margin-top: 10px;
+              font-size: 13px;
+              color: #708090; }
+          #body #content .card .cont .list li:last-of-type a {
+            padding-bottom: 0px;
+            border-bottom: none; }
+          #body #content .card .cont .list li:first-of-type a {
+            padding-top: 0px; }
+      #body #content .card.filter {
+        cursor: pointer;
+        position: relative; }
+        #body #content .card.filter .icon {
+          position: absolute;
+          font-size: 30px;
+          top: 10px;
+          right: 10px;
+          opacity: .6; }
+        #body #content .card.filter .text-red {
+          color: #F22435; }
+        #body #content .card.filter .text-green {
+          color: #36D9B0; }
+        #body #content .card.filter .text-yellow {
+          color: #FFCF0D; }
+        #body #content .card.filter .text-blue {
+          color: #3D8EF2; }
+        #body #content .card.filter h3 {
+          font-size: 22px;
+          font-weight: bold;
+          color: #708090;
+          margin-top: 20px; }
+      #body #content .card ~ .dropdown-menu {
+        width: calc(100% - 30px);
+        left: 15px;
+        border-radius: 0px;
+        top: calc(100% - 30px);
+        margin-top: 0px;
+        border: none;
+        padding: 0px; }
+        #body #content .card ~ .dropdown-menu li {
+          padding: 15px;
+          font-weight: bold;
+          font-size: 16px;
+          color: #152935;
+          border-bottom: #dae4f1 1px solid;
+          -webkit-transition: 0.2s ease-in-out;
+          transition: 0.2s ease-in-out;
+          cursor: pointer; }
+          #body #content .card ~ .dropdown-menu li:hover {
+            color: #364fff;
+            background-color: #f4f7fb; }
+    #body #content .dropdown .dropdown-menu {
+      display: block;
+      -webkit-transform: scaleY(0);
+              transform: scaleY(0);
+      -webkit-transform-origin: 50% 0px;
+              transform-origin: 50% 0px;
+      -webkit-transition: 0.4s ease-in-out;
+      transition: 0.4s ease-in-out;
+      opacity: 0; }
+    #body #content .dropdown.open .dropdown-menu {
+      -webkit-transform: scaleY(1);
+              transform: scaleY(1);
+      opacity: 1; }
+  #body .external-tabs .nav-tabs {
+    border: none;
+    margin-bottom: 20px; }
+    #body .external-tabs .nav-tabs > li a {
+      height: 40px;
+      padding: 0px 20px;
+      margin-right: 15px;
+      line-height: 40px;
+      border-radius: 40px;
+      border: none;
+      background-color: #FFFFFF;
+      -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 10px 0px;
+              box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 10px 0px;
+      font-weight: bold;
+      color: #152935;
+      font-size: 14px;
+      -webkit-transition: 0.2s ease-in-out;
+      transition: 0.2s ease-in-out; }
+    #body .external-tabs .nav-tabs > li:hover a, #body .external-tabs .nav-tabs > li.active a {
+      color: #FFFFFF;
+      background-color: #364fff;
+      -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 20px 5px;
+              box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 20px 5px; }
+  #body .group + .group {
+    margin-top: 20px; }
+  #body .group .collapse-title {
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #dae4f1;
+    cursor: pointer; }
+  #body .group .group-cont {
+    padding: 10px;
+    border: #dae4f1 1px solid; }
+  #body table.table {
+    margin-bottom: 0px; }
+    #body table.table tr th {
+      font-size: 14px;
+      font-weight: bold;
+      color: #364fff; }
+    #body table.table tr:first-of-type td {
+      border-top: none; }
+    #body table.table tr td {
+      vertical-align: middle;
+      font-size: 14px; }
+      #body table.table tr td .la {
+        font-size: 20px;
+        display: block;
+        text-align: center; }
+      #body table.table tr td .status {
+        display: block;
+        height: 14px;
+        width: 14px;
+        border-radius: 100%;
+        margin: 0 auto;
+        background-color: #dae4f1; }
+        #body table.table tr td .status.active {
+          background-color: #FFFF00; }
+        #body table.table tr td .status.won {
+          background-color: #008000; }
+        #body table.table tr td .status.canceled {
+          background-color: #F22435; }
+        #body table.table tr td .status.lost {
+          background-color: #000000; }
+  #body table.editable .add {
+    cursor: pointer;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px; }
+  #body table.editable td {
+    position: relative; }
+    #body table.editable td input, #body table.editable td select {
+      height: 30px;
+      line-height: 30px;
+      width: 100%; }
+      #body table.editable td input.disabled, #body table.editable td select.disabled {
+        pointer-events: none;
+        border-color: transparent; }
+    #body table.editable td .actions li {
+      display: table-cell;
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      color: #FFFFFF;
+      cursor: pointer; }
+      #body table.editable td .actions li.confirm {
+        background-color: #36D9B0; }
+      #body table.editable td .actions li.cancel {
+        background-color: #F22435; }
+      #body table.editable td .actions li i {
+        line-height: 30px; }
+    #body table.editable td input.disabled ~ .actions {
+      display: none; }
+    #body table.editable td input ~ .actions {
+      position: absolute;
+      top: 8px;
+      right: 8px; }
+    #body table.editable td .delete {
+      cursor: pointer; }
+  #body .form-group {
+    border-bottom: #dae4f1 1px solid;
+    padding: 10px 0px;
+    margin: 0px; }
+    #body .form-group:first-of-type {
+      padding-top: 0px; }
+    #body .form-group:last-of-type {
+      padding-bottom: 0px;
+      border-bottom: 0px; }
+    #body .form-group .inputs {
+      position: relative;
+      padding-top: 20px; }
+      #body .form-group .inputs.swg, #body .form-group .inputs.filter {
+        padding-top: 0px; }
+      #body .form-group .inputs input[type="text"], #body .form-group .inputs input[type="password"], #body .form-group .inputs select, #body .form-group .inputs textarea {
+        height: 35px;
+        border: #dae4f1 1px solid;
+        line-height: 33px;
+        padding: 0px 10px;
+        width: 100%;
+        -webkit-transition: 0.2s ease-in-out;
+        transition: 0.2s ease-in-out; }
+        #body .form-group .inputs input[type="text"] ~ label, #body .form-group .inputs input[type="password"] ~ label, #body .form-group .inputs select ~ label, #body .form-group .inputs textarea ~ label {
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          color: #708090;
+          font-size: 13px;
+          font-weight: bold;
+          -webkit-transition: 0.2s ease-in-out;
+          transition: 0.2s ease-in-out; }
+        #body .form-group .inputs input[type="text"]:focus, #body .form-group .inputs input[type="password"]:focus, #body .form-group .inputs select:focus, #body .form-group .inputs textarea:focus {
+          border-color: #364fff;
+          outline: none; }
+          #body .form-group .inputs input[type="text"]:focus ~ label, #body .form-group .inputs input[type="password"]:focus ~ label, #body .form-group .inputs select:focus ~ label, #body .form-group .inputs textarea:focus ~ label {
+            color: #364fff; }
+        #body .form-group .inputs input[type="text"][readonly], #body .form-group .inputs input[type="password"][readonly], #body .form-group .inputs select[readonly], #body .form-group .inputs textarea[readonly] {
+          opacity: .7;
+          cursor: no-drop; }
+          #body .form-group .inputs input[type="text"][readonly]:focus, #body .form-group .inputs input[type="password"][readonly]:focus, #body .form-group .inputs select[readonly]:focus, #body .form-group .inputs textarea[readonly]:focus {
+            border-color: #dae4f1;
+            outline: none; }
+            #body .form-group .inputs input[type="text"][readonly]:focus ~ label, #body .form-group .inputs input[type="password"][readonly]:focus ~ label, #body .form-group .inputs select[readonly]:focus ~ label, #body .form-group .inputs textarea[readonly]:focus ~ label {
+              color: #708090; }
+      #body .form-group .inputs textarea {
+        padding: 10px;
+        line-height: 18px;
+        min-height: 100px; }
+    #body .form-group .inputs-select {
+      overflow: hidden;
+      padding-top: 30px; }
+      #body .form-group .inputs-select.filter {
+        padding-top: 0px; }
+      #body .form-group .inputs-select > label {
+        line-height: 20px; }
+      #body .form-group .inputs-select .input-checkbox {
+        float: left;
+        width: 17px;
+        height: 17px;
+        background-color: #dae4f1;
+        position: relative;
+        margin-right: 10px; }
+        #body .form-group .inputs-select .input-checkbox input {
+          position: absolute;
+          z-index: 2;
+          cursor: pointer;
+          opacity: 0;
+          display: block;
+          width: 17px;
+          height: 17px; }
+          #body .form-group .inputs-select .input-checkbox input ~ span {
+            display: block;
+            width: 17px;
+            height: 17px;
+            text-align: center;
+            line-height: 17px;
+            -webkit-transition: 0.2s ease-in-out;
+            transition: 0.2s ease-in-out;
+            color: #364fff;
+            opacity: 0; }
+            #body .form-group .inputs-select .input-checkbox input ~ span::before {
+              content: "\f17b";
+              font-family: LineAwesome; }
+          #body .form-group .inputs-select .input-checkbox input label {
+            color: #708090;
+            font-size: 13px;
+            font-weight: bold;
+            -webkit-transition: 0.2s ease-in-out;
+            transition: 0.2s ease-in-out;
+            font-weight: bold;
+            line-height: 18px; }
+          #body .form-group .inputs-select .input-checkbox input:checked ~ span {
+            opacity: 1; }
+  #body .form-actions {
+    padding-top: 10px;
+    overflow: hidden; }
+    #body .form-actions button {
+      padding: 10px 15px;
+      border: none;
+      background-color: #364fff;
+      color: #FFFFFF;
+      font-size: 14px;
+      font-weight: bold;
+      float: right; }
+  #body .input-attachment .input {
+    background-color: #f4f7fb;
+    border: 1px #708090 dashed;
+    height: 100px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden; }
+    #body .input-attachment .input input[type="file"] {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 100px;
+      cursor: pointer;
+      opacity: 0;
+      z-index: 3; }
+    #body .input-attachment .input label {
+      display: block;
+      text-align: center;
+      font-weight: bold;
+      font-size: 13px;
+      color: #708090; }
+      #body .input-attachment .input label .icon {
+        padding: 10px; }
+        #body .input-attachment .input label .icon svg {
+          height: 55px;
+          fill: #708090; }
+  #body .input-attachment .attaches {
+    overflow: hidden;
+    margin-bottom: 20px; }
+    #body .input-attachment .attaches li {
+      float: left;
+      height: 35px;
+      line-height: 35px;
+      overflow: hidden;
+      line-height: 35px;
+      padding-right: 10px;
+      border: #dae4f1 1px solid;
+      background-color: #f4f7fb;
+      margin-right: 10px;
+      cursor: pointer; }
+      #body .input-attachment .attaches li .icon {
+        float: left;
+        width: 35px;
+        height: 35px;
+        background-color: #364fff;
+        text-align: center;
+        color: #FFFFFF;
+        font-size: 22px;
+        margin-right: 10px; }
+  #body .wizard-cotroles {
+    overflow: hidden;
+    margin-top: 10px; }
+    #body .wizard-cotroles .control {
+      padding: 10px 15px;
+      background-color: #364fff;
+      color: #FFFFFF;
+      font-weight: bold;
+      font-size: 14px;
+      width: 70px;
+      text-align: center;
+      cursor: pointer; }
+      #body .wizard-cotroles .control.next {
+        float: right; }
+      #body .wizard-cotroles .control.prev {
+        float: left; }
+    #body .wizard-cotroles p {
+      width: calc(100% - 140px);
+      float: right;
+      text-align: center;
+      line-height: 35px; }
+  #body .filter-btn {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 100%;
+    background-color: #f4f7fb;
+    border: #dae4f1 1px solid;
+    color: #152935;
+    z-index: 1;
+    text-align: center;
+    right: 50px;
+    top: 42px;
+    cursor: pointer; }
+  #body .table-cont {
+    -webkit-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out; }
+  #body .checkbox-group {
+    overflow: hidden; }
+    #body .checkbox-group li {
+      float: left;
+      margin-right: 10px;
+      margin-top: 10px; }
+  #body .latest-comments li {
+    position: relative;
+    margin-bottom: 20px;
+    padding-left: 70px; }
+    #body .latest-comments li:last-child {
+      margin-bottom: 0px; }
+    #body .latest-comments li .cont-img {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      height: 50px;
+      width: 50px;
+      border-radius: 100%;
+      overflow: hidden;
+      background: #dae4f1 url(../images/manager.svg) center bottom no-repeat;
+      background-size: 40px; }
+    #body .latest-comments li .cont-txt {
+      border-radius: 10px;
+      background-color: #f4f7fb;
+      border: #dae4f1 1px solid;
+      padding: 10px; }
+      #body .latest-comments li .cont-txt h3 {
+        font-size: 14px;
+        font-weight: bold;
+        color: #364fff;
+        margin-bottom: 10px; }
+      #body .latest-comments li .cont-txt h4 {
+        font-weight: bold;
+        font-size: 14px;
+        color: #152935;
+        margin-bottom: 10px; }
+      #body .latest-comments li .cont-txt p {
+        color: #708090;
+        font-size: 14px;
+        line-height: 18px; }
+      #body .latest-comments li .cont-txt .date {
+        font-size: 11px;
+        font-style: italic;
+        position: absolute;
+        top: 10px;
+        color: #708090;
+        right: 10px; }
+  #body .add-comment .inputs {
+    padding: 0px; }
+    #body .add-comment .inputs input {
+      margin-bottom: 10px; }
+  #body .datetimepicker {
+    border: none;
+    border-radius: 0px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 10px 25px 0px, rgba(0, 0, 0, 0.1) 0 0px 25px 0px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0 10px 25px 0px, rgba(0, 0, 0, 0.1) 0 0px 25px 0px; }
+    #body .datetimepicker th, #body .datetimepicker td {
+      border-radius: 0px; }
+    #body .datetimepicker td.active {
+      background-color: #364fff; }
+    #body .datetimepicker .icon-arrow-right::before, #body .datetimepicker .icon-arrow-left::before {
+      font-family: LineAwesome; }
+    #body .datetimepicker .icon-arrow-right::before {
+      content: ""; }
+    #body .datetimepicker .icon-arrow-left::before {
+      content: ""; }
+  #body .pagin {
+    text-align: center; }
+    #body .pagin ul {
+      display: inline-block;
+      margin-bottom: 0px; }
+      #body .pagin ul li a {
+        width: 35px;
+        height: 35px;
+        display: block;
+        border-radius: 100%;
+        margin: 0px 5px;
+        -webkit-transition: 0.2s ease-in-out;
+        transition: 0.2s ease-in-out;
+        border-color: #dae4f1;
+        color: #152935;
+        line-height: 35px;
+        padding: 0px; }
+      #body .pagin ul li.active a {
+        background-color: #364fff;
+        color: #FFFFFF; }
+
+/*# sourceMappingURL=style.css.map */

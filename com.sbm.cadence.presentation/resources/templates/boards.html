@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html xmlns:th="http://www.thymeleaf.org">
+
+    <head>
+        <title>SBM</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../static/css/bootstrap.min.css" th:href="@{/css/bootstrap.min.css}" rel="stylesheet" type="text/css"/>
+        <link href="../static/css/line-awesome.min.css" th:href="@{/css/line-awesome.min.css}"  rel="stylesheet" type="text/css"/>
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
+        <link href="../static/css/style.css" th:href="@{/css/style.css}" rel="stylesheet" type="text/css"/>
+
+    </head>
+    <body id="body">
+        <header>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="logo">
+                            <img src="images/logo.png" alt=""/>
+                        </div><!-- /.logo -->
+                    </div><!-- /.col-md-4 -->
+                     <div class="col-md-4 col-md-push-4">
+                        <div class="otions">
+                        </div><!-- /.otions -->
+                    </div><!-- /.col-md-4 col-md-push-4-->
+                    <div class="col-md-4 col-md-pull-4">
+                        <div class="search">
+                            <div class="search-input">
+                                <input type="text" name="" id="" />
+                                <button type="submit">
+                                    <i class="la la-search"></i>
+                                </button>
+                            </div><!-- /.search-input -->
+                        </div><!-- /.search -->
+                    </div><!-- /.col-md-4 col-md-pull-4 -->
+                </div><!-- /.row -->
+            </div><!-- /.container-fluid -->
+        </header>
+        <aside>
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="panel">
+                    <div class="panel-heading" role="tab" id="headingOne">
+                        <h4 class="panel-title">
+                            <a class="collapsed" href="boards.html">
+                                Dashboard
+                                <i class="la la-bar-chart"></i>
+                            </a>
+                        </h4>
+                    </div>
+                    <!-- <div id="collapse-1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href="#">Menu item</a></li>
+                                <li><a href="#">Menu item</a></li>
+                                <li><a href="#">Menu item</a></li>
+                                <li><a href="#">Menu item</a></li>
+                            </ul>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="panel">
+                    <div class="panel-heading" role="tab" id="headingOne">
+                        <h4 class="panel-title">
+                            <a class="collapsed" href="index.html">
+                                Leads
+                                <i class="la la-suitcase"></i>
+                            </a>
+                        </h4>
+                    </div>
+                    </div>
+                    
+                    <div class="panel">
+                    <div class="panel-heading" role="tab" id="headingOne">
+                        <h4 class="panel-title">
+                            <a class="collapsed" href="leads.html">
+                                Add Lead
+                                <i class="la la-plus-circle"></i>
+                            </a>
+                        </h4>
+                    </div>
+                   </div>
+                
+                <div class="panel">
+                    <div class="panel-heading" role="tab" id="headingOne">
+                        <h4 class="panel-title">
+                            <a class="collapsed" href="data.html">
+                                Data
+                                <i class="la la-database"></i>
+                            </a>
+                        </h4>
+                    </div>
+                    
+                </div>
+                
+               
+                <div class="panel">
+                    <div class="panel-heading" role="tab" id="headingOne">
+                        <h4 class="panel-title">
+                            <!-- <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-7" aria-expanded="true" aria-controls="collapse-7"> -->
+                            <a class="collapsed" href="settings.html">
+                                Settings
+                                <i class="la la-gear"></i>
+                            </a>
+                        </h4>
+                    </div>
+                    <!-- <div id="collapse-7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href="#">Menu item</a></li>
+                                <li><a href="#">Menu item</a></li>
+                                <li><a href="#">Menu item</a></li>
+                                <li><a href="#">Menu item</a></li>
+                            </ul>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+
+        </aside>
+        <section id="content">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12 dropdown">
+                    <div class="card filter" data-toggle="dropdown" role = "button" aria-haspopup="true" aria-expanded="false"> 
+                        <div class="cont">
+                            <div class="icon text-green">
+                                <i class="la la-map"></i>
+                            </div><!-- /.icon -->
+                           <h2 class="">Region</h2>
+                            <h3><span id ="selectedregion">Central</span></h3>
+                        </div><!-- /.cont -->
+                    </div><!-- /.card --> 
+                    <ul class="dropdown-menu" role = "menu" aria-labelledby="dropdownMenu1" id = "dd1">
+                        <li>East</li>
+                        <li>Central</li>
+                        <li>West</li>
+                        <li>All</li>
+                    </ul><!-- /.dropdown-menu --> 
+                    </div><!-- /.col-md-3 col-sm-6 col-xs-12 dropdown -->
+                <div class="col-md-3 col-sm-6 col-xs-12 dropdown">
+                    <div class="card filter" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <div class="cont">
+                            <div class="icon text-blue">
+                                <i class="la la-user"></i>
+                            </div><!-- /.icon -->
+                            <h2 class="">Sales</h2>
+                            <h3><span id  = "selectedsales">All </span></h3>
+                        </div><!-- /.cont -->
+                    </div><!-- /.card -->
+                    <ul class="dropdown-menu" role = "menu" aria-labelledby="dropdownMenu2" id = "dd2">
+                        <li>Kaled Ali</li>
+                        <li>Mohammed Salem</li>
+                        <li>Saad Mohammed</li>
+                        <li>All</li>
+                    </ul><!-- /.dropdown-menu -->
+                </div><!-- /.col-md-3 col-sm-6 col-xs-12 dropdown -->
+                <div class="col-md-3 col-sm-6 col-xs-12 dropdown">
+                    <div class="card filter" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <div class="cont">
+                            <div class="icon text-yellow">
+                                <i class="la la-map-marker"></i>
+                            </div><!-- /.icon -->
+                            <h2 class="">Sector</h2>
+                            <h3><span id  = "selectedsector">Banking </span></h3>
+                        </div><!-- /.cont -->
+                    </div><!-- /.card -->
+                    <ul class="dropdown-menu" role = "menu" aria-labelledby="dropdownMenu3" id = "dd3" >
+                        <li>Telecom</li>
+                        <li>Banking</li>
+                        <li>Government</li>
+                        <li>Education</li>
+                        <li>All</li>
+                    </ul><!-- /.dropdown-menu -->
+                </div><!-- /.col-md-3 col-sm-6 col-xs-12 dropdown -->
+                <div class="col-md-3 col-sm-6 col-xs-12 dropdown">
+                    <div class="card filter" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <div class="cont">
+                            <div class="icon text-red">
+                                <i class="la la-calendar"></i>
+                            </div><!-- /.icon -->
+                            <h2 class="">Expected Closing Date</h2>
+                            <!--<h3>23 October</h3> -->
+                            <div class="inputs">
+                            <input class="datepicker" type="text" id ="closingdatecal">
+        
+                        </div><!-- /.inputs -->
+                        </div><!-- /.cont -->
+                    </div><!-- /.card -->
+                    <!-- <ul class="dropdown-menu">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul> -->
+                </div><!-- /.col-md-3 col-sm-6 col-xs-12 dropdown -->
+            </div><!-- /.row -->
+            <div class="row">
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="card">
+                        <div class="card-title">
+                            <h2>Brief</h2>
+                        </div><!-- /.card-title -->
+                        <div class="cont">
+                            <ul class="list">
+                                <li>
+                                    <a href="">
+                                        <h3>Closed Revenue</h3>
+                                        <p>$28M</p>
+                                        <p>$17K</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <h3>Quota Achievement</h3>
+                                        <p>$28M</p>
+                                        <p>$17K</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <h3>Opportunities</h3>
+                                        <p>$28M</p>
+                                        <p>$17K</p>
+                                    </a>
+                                </li>
+                            </ul><!-- /.list -->
+                        </div><!-- /.cont -->
+                    </div><!-- /.card -->
+                </div><!-- /.col-md-4 col-sm-6 col-xs-12 -->
+                <div class="col-md-8 col-sm-6 col-xs-12">
+                    <div class="card">
+                        <div class="card-title">
+                            <h2>Top 5 Active Opportunities</h2>
+                        </div><!-- /.card-title -->
+                        <div class="cont">
+                            <canvas id="chart-1" height="239px"></canvas>  
+                        </div><!-- /.cont -->
+                    </div><!-- /.card -->
+                </div><!-- /.col-md-8 col-sm-6 col-xs-12 -->
+            </div><!-- /.row -->
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="card">
+                        <div class="card-title">
+                            <h2>Quota Achievement: 20M$</h2>
+                        </div><!-- /.card-title -->
+                        <div class="cont">
+                            <canvas id="chart-2" height="239px"></canvas>  
+                        </div><!-- /.cont -->
+                    </div><!-- /.card -->
+                </div><!-- /.col-md-6 col-sm-6 col-xs-12 -->
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="card">
+                        <div class="card-title">
+                            <h2>Pipline By Opportunity Status</h2>
+                        </div><!-- /.card-title -->
+                        <div class="cont">
+                            <canvas id="chart-3" height="239px"></canvas>  
+                        </div><!-- /.cont -->
+                    </div><!-- /.card -->
+                </div><!-- /.col-md-6 col-sm-6 col-xs-12 -->
+            </div><!-- /.row -->
+            <div class="row">
+                <!-- <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="card">
+                        <div class="card-title">
+                            <h2>Open Sales Pipline</h2>
+                        </div>
+                        <div class="cont">
+                            <canvas id="chart-4" height="239px"></canvas>  
+                        </div>
+                    </div>
+                </div> -->
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="card">
+                        <div class="card-title">
+                            <h2>Sales Revenues VS Quota Trend</h2>
+                        </div><!-- /.card-title -->
+                        <div class="cont">
+                            <canvas id="chart-5" height="239px"></canvas>  
+                        </div><!-- /.cont -->
+                    </div><!-- /.card -->
+                </div><!-- /.col-md-6 col-sm-6 col-xs-12 -->
+            </div><!-- /.row -->
+        </section>
+        <footer>
+            <script src="../static/js/charts.js" th:src="@{/js/charts.js}" type="text/javascript"></script>
+            <script src="../static/js/jquery-3.3.1.min.js" th:src="@{/js/jquery-3.3.1.min.js}" type="text/javascript"></script>
+            <script src="../static/js/bootstrap.min.js" th:src="@{/js/bootstrap.min.js}" type="text/javascript"></script>
+            <script src="../static/js/style.js" th:src="@{/js/style.js}" type="text/javascript"></script>
+            <script src="../static/js/bootstrap-datetimepicker.min.js" th:src="@{/js/bootstrap-datetimepicker.min.js}" type="text/javascript"></script>
+            <script type="text/javascript">
+            	$('#closingdatecal').datetimepicker({ 
+   				 minView: 2, 
+   				 pickTime: false, 
+   				 language: 'pt-BR',
+   				 format: 'dd/mm/yyyy',
+        			autoclose: true
+					});
+                var ctx_1 = document.getElementById("chart-1").getContext('2d');
+                ctx_1.height = 1000;
+                var myChart = new Chart(ctx_1, {
+                    type: 'bar',
+                    data: {
+                        labels: ["MOJ", "Rayed Bank", "Rajhi Bank", "SEC", "NIC"],
+                        datasets: [{
+                                label: 'Top 5 Active Opportunities',
+                                data: [12, 10, 20, 5, 7],
+                                backgroundColor: [
+                                    'rgba(255, 99, 132, 0.2)',
+                                    'rgba(54, 162, 235, 0.2)',
+                                    'rgba(255, 206, 86, 0.2)',
+                                    'rgba(75, 192, 192, 0.2)',
+                                    'rgba(153, 102, 255, 0.2)',
+                                    'rgba(255, 159, 64, 0.2)'
+                                ],
+                                borderColor: [
+                                    'rgba(255,99,132,1)',
+                                    'rgba(54, 162, 235, 1)',
+                                    'rgba(255, 206, 86, 1)',
+                                    'rgba(75, 192, 192, 1)',
+                                    'rgba(153, 102, 255, 1)',
+                                    'rgba(255, 159, 64, 1)'
+                                ],
+                                borderWidth: 1
+                            }]
+                    },
+                    options: {
+                        legend: {
+                            display: false
+                        },
+                        maintainAspectRatio: false,
+                    }
+                });
+                var ctx_2 = document.getElementById("chart-2").getContext('2d');
+                ctx_2.height = 1000;
+                var myChart = new Chart(ctx_2, {
+                    type: 'pie',
+                    data: {
+                        labels: ["NIC", "MOJ", "Rayed Bank ", "Not Yet",  "Rajhi Bank"],
+                        datasets: [{
+                                label: 'Quota Achievement',
+                                data: [12, 19, 18, 5, 6],
+                                backgroundColor: [
+                                    'rgba(105, 105, 105, 0.2)',
+                                    'rgba(105, 105, 105, 0.2)',
+                                    'rgba(105, 105, 105, 0.2)',
+                                    'rgba(105, 105, 105, 0.2)',
+                                    'rgba(105, 105, 105, 0.2)'
+                                ],
+                                borderColor: [
+                                    'rgba(105, 105, 105,1)',
+                                    'rgba(105, 105, 105, 1)',
+                                    'rgba(105, 105, 105, 1)',
+                                    'rgba(105, 105, 105, 1)',
+                                    'rgba(105, 105, 105, 1)'
+                                ],
+                                borderWidth: 1
+                            }]
+                    },
+                    options: {
+                        legend: {
+                            display: false
+                        },
+                        maintainAspectRatio: false,
+                    }
+                });
+                var ctx_3 = document.getElementById("chart-3").getContext('2d');
+                ctx_3.height = 1000;
+                var myChart = new Chart(ctx_3, {
+                    type: 'pie',
+                    data: {
+                        labels: ["NIC", "MOJ", "Rayed Bank"],
+                        datasets: [{
+                                label: 'Top-Closed Opportunities',
+                                data: [12, 19, 3],
+                                backgroundColor: [
+                                    'rgba(255, 99, 132, 0.2)',
+                                    'rgba(54, 162, 235, 0.2)',
+                                    'rgba(255, 206, 86, 0.2)',
+                                ],
+                                borderColor: [
+                                    'rgba(255,99,132,1)',
+                                    'rgba(54, 162, 235, 1)',
+                                    'rgba(255, 206, 86, 1)',
+                                ],
+                                borderWidth: 1
+                            }]
+                    },
+                    options: {
+                        legend: {
+                            display: false
+                        },
+                        maintainAspectRatio: false,
+                    }
+                });
+                /* var ctx_4 = document.getElementById("chart-4").getContext('2d');
+                ctx_4.height = 1000;
+                var myChart = new Chart(ctx_4, {
+                    type: 'bar',
+                    data: {
+                        labels: ["NIC", "MOJ", "Rayed Bank", "Rajhi Bank", "SEC", "Vocal", "Porto"],
+                        datasets: [{
+                                label: 'Top-Closed Opportunities',
+                                data: [12, 19, 3, 5, 2, 3, 6, 8],
+                                backgroundColor: [
+                                    'rgba(255, 99, 132, 0.2)',
+                                    'rgba(54, 162, 235, 0.2)',
+                                    'rgba(255, 206, 86, 0.2)',
+                                    'rgba(75, 192, 192, 0.2)',
+                                    'rgba(153, 102, 255, 0.2)',
+                                    'rgba(255, 159, 64, 0.2)'
+                                ],
+                                borderColor: [
+                                    'rgba(255,99,132,1)',
+                                    'rgba(54, 162, 235, 1)',
+                                    'rgba(255, 206, 86, 1)',
+                                    'rgba(75, 192, 192, 1)',
+                                    'rgba(153, 102, 255, 1)',
+                                    'rgba(255, 159, 64, 1)'
+                                ],
+                                borderWidth: 1
+                            }]
+                    },
+                    options: {
+                        legend: {
+                            display: false
+                        },
+                        maintainAspectRatio: false,
+                    }
+                }); */
+                var ctx_5 = document.getElementById('chart-5').getContext('2d');
+                ctx_5.height = 1000;
+                window.myLine = Chart.Line(ctx_5, {
+                    data: {
+                        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+                        datasets: [{
+                                label: 'Revenues',
+                                borderColor: 'rgba(105, 105, 105, 1)',
+                                backgroundColor: 'rgba(105, 105, 105, 0.2)',
+                                fill: false,
+                                data: [12, 19, 3, 5, 2, 3, 6, 8],
+                                yAxisID: 'y-axis-1',
+                            }, {
+                                label: 'Quota Trend',
+                                borderColor: 'rgba(105, 105, 105, 1)',
+                                backgroundColor: 'rgba(105, 105, 105, .2)',
+                                fill: false,
+                                data: [22, 15, 18, 1, 5, 19, 23, 2],
+                                yAxisID: 'y-axis-2'
+                            }]
+                    },
+                    options: {
+                        responsive: true,
+                        hoverMode: 'index',
+                        stacked: false,
+                        maintainAspectRatio: false,
+                        title: {
+                            display: false,
+                        },
+                        scales: {
+                            yAxes: [{
+                                    type: 'linear', 
+                                    display: true,
+                                    position: 'left',
+                                    id: 'y-axis-1',
+                                }, {
+                                    type: 'linear', 
+                                    display: true,
+                                    position: 'right',
+                                    id: 'y-axis-2',
+                                    gridLines: {
+                                        drawOnChartArea: false, // only want the grid lines for one axis to show up
+                                    },
+                                }],
+                        }
+                    }
+                });
+            </script>
+        </footer>
+    </body>
+</html>

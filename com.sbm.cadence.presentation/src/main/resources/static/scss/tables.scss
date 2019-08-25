@@ -1,0 +1,101 @@
+table{
+    &.table{
+        margin-bottom: 0px;
+        tr{
+            th{
+                font-size: 14px;
+                font-weight: bold;
+                color: $primary;
+            }
+            &:first-of-type{
+                td{
+                    border-top: none;
+                }
+            }
+            td{
+                vertical-align: middle;
+                font-size: 14px;
+                .la{
+                    font-size: 20px;
+                    display: block;
+                    text-align: center;
+                }
+                .status{
+                    display: block;
+                    height: 14px;
+                    width: 14px;
+                    border-radius: 100%;
+                    margin: 0 auto;
+                    background-color: $gray;
+                    &.active{
+                        background-color: $success;
+                    }
+                    &.canceled{
+                        background-color: $danger;
+                    }
+                    &.lost{
+                        background-color: $black;
+                    }
+                }
+            }
+        }
+    }
+    &.editable{
+        .add{
+            cursor: pointer;
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+        }
+        td{
+            position: relative;
+            input,select{
+                //padding: 0px 10px;
+                height: 30px;
+                line-height: 30px;
+                width: 100%;
+                &.disabled{
+                    pointer-events: none;
+                    border-color: transparent;
+                }
+            }
+            .actions{
+                li{
+                    display: table-cell;
+                    width: 30px;
+                    height: 30px;
+                    text-align: center;
+                    color: $white;
+                    cursor: pointer;
+                    &.confirm{
+                        background-color: $success;
+                    }
+                    &.cancel{
+                        background-color: $danger;
+                    }
+                    i{
+                        line-height: 30px;
+                    }
+                }
+            }
+
+            input{
+                //padding-right: 60px;
+                &.disabled{
+                    ~.actions{
+                        display: none;
+                    }
+                }
+                ~.actions{
+                    position: absolute;
+                    top: 8px;
+                    right: 8px;    
+                }
+            }
+            .delete{
+                cursor: pointer;
+            }
+        }
+    }
+}
